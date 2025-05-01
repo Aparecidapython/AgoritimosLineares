@@ -1,0 +1,26 @@
+class Partition:
+    pass
+
+
+def quick(lista):
+    def _quick(lista, start, end):
+        if start < end:
+            pivot_idx = Partition(lista , start , end)
+            _quick(lista, start, pivot_idx -1)
+            _quick(lista ,pivot_idx + 1, end)
+            _quick(lista, 0, len(lista) -1)
+            return lista
+            def partition(lista, start, end):
+                pivot = lista[end]
+                i = start -1
+                for j in range(start, end):
+                    if lista[j] <= pivot:
+                        i += 1
+                        lista[i], lista[j], = lista[j], lista[i]
+                        lista[i + 1], lista[end], lista[i + 1]
+                        return i + 1
+
+lista = [10, 50, 70, 90, 100]
+print('lista org:', lista)
+quick(lista)
+print('lista ordenada:', lista)
