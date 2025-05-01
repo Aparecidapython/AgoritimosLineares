@@ -1,2 +1,1 @@
-Tudo Sobre Algoritimos de ordenação e alguns dos mais importantes ED(Estruturas de Dados)
-Tudo em Linguagem Python
+Códigos feitos com POO e classes e variaves em Liguagem em Python
